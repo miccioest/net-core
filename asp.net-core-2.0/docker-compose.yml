@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  asp.net-core-2.0:
+    image: asp.net-core-2.0
+    build:
+      context: .
+      dockerfile: asp.net-core-2.0/Dockerfile
