@@ -27,7 +27,7 @@ namespace asp.net_core_2._0
 
             app.Run(async (context) =>
             {
-                await context.Response.WriteAsync("Hello World!");
+                await context.Response.WriteAsync("Hello World! changing...");
             });
         }
     }
