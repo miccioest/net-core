@@ -1,8 +1,8 @@
-## dotnet build + docker build
-dotnet publish -c Release
-cd ..
-docker build -f asp.net-core-2.0/Dockerfile  -t samplewebapi --build-arg source=bin/Release/netcoreapp2.0/publish .
+## docker build
+docker build -f asp.net-core-2.0/Dockerfile  -t samplewebapi .
 
-## docker tag
+## docker tag (aws ecr)
+docker tag samplewebapi:latest 738010330285.dkr.ecr.us-east-1.amazonaws.com/samplewebapi:v5
 
-## aws ecr push
+## docker push (aws ecr)
+docker push 738010330285.dkr.ecr.us-east-1.amazonaws.com/samplewebapi:v5
