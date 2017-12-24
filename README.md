@@ -16,3 +16,4 @@ docker tag samplewebapi:latest 738010330285.dkr.ecr.us-east-1.amazonaws.com/samp
 
 ## docker push (aws ecr)
 docker push 738010330285.dkr.ecr.us-east-1.amazonaws.com/samplewebapi:v5
+
